@@ -19,7 +19,8 @@
   "screenshots": [],
   "releases": [
     {
-      "file": "releases/dashboard-0.5.0.slp",
+      "version": "0.5.0",
+      "upload": "releases/dashboard-0.5.0.slp",
       "releasedAt": "2026-10-25T12:00:00Z",
       "changelog": "- 주간 리포트"
     }

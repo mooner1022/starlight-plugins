@@ -24,7 +24,8 @@
   "screenshots": [],
   "releases": [
     {
-      "file": "releases/sqlite-1.0.3.slp",
+      "version": "1.0.3",
+      "upload": "releases/sqlite-1.0.3.slp",
       "releasedAt": "2026-10-19T12:00:00Z",
       "changelog": "- 트랜잭션 API 추가"
     }

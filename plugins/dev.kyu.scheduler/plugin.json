@@ -29,12 +29,14 @@
   ],
   "releases": [
     {
-      "file": "releases/scheduler-2.0.0.slp",
+      "version": "2.0.0",
+      "upload": "releases/scheduler-2.0.0.slp",
       "releasedAt": "2026-10-27T12:00:00Z",
       "changelog": "- 크론 표현식 지원\n- 설정 구조가 바뀌어 이전 일정은 다시 등록해야 해요"
     },
     {
-      "file": "releases/scheduler-1.3.0.slp",
+      "version": "1.3.0",
+      "upload": "releases/scheduler-1.3.0.slp",
       "releasedAt": "2026-07-30T09:00:00Z",
       "changelog": "- 요일 반복"
     }

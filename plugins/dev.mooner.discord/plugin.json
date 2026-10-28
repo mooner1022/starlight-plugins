@@ -33,17 +33,20 @@
   ],
   "releases": [
     {
-      "file": "releases/discord-1.2.0.slp",
+      "version": "1.2.0",
+      "upload": "releases/discord-1.2.0.slp",
       "releasedAt": "2026-10-26T12:00:00Z",
       "changelog": "- 스레드 메시지 전달 지원\n- 재연결이 끊기던 문제 수정"
     },
     {
-      "file": "releases/discord-1.1.0.slp",
+      "version": "1.1.0",
+      "upload": "releases/discord-1.1.0.slp",
       "releasedAt": "2026-09-24T12:00:00Z",
       "changelog": "- 방마다 채널 지정\n- 이미지 링크 변환"
     },
     {
-      "file": "releases/discord-1.0.0.slp",
+      "version": "1.0.0",
+      "upload": "releases/discord-1.0.0.slp",
       "releasedAt": "2026-04-01T09:00:00Z",
       "changelog": "- 첫 공개 버전"
     }

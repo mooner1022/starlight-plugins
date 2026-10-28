@@ -19,12 +19,14 @@
   "screenshots": [],
   "releases": [
     {
-      "file": "releases/telegram-0.3.1.slp",
+      "version": "0.3.1",
+      "upload": "releases/telegram-0.3.1.slp",
       "releasedAt": "2026-10-28T03:00:00Z",
       "changelog": "- 긴 메시지가 잘리던 문제 수정"
     },
     {
-      "file": "releases/telegram-0.3.0.slp",
+      "version": "0.3.0",
+      "upload": "releases/telegram-0.3.0.slp",
       "releasedAt": "2026-10-08T12:00:00Z",
       "changelog": "- 명령어 필터 추가"
     }

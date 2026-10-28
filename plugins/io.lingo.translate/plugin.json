@@ -19,7 +19,8 @@
   "screenshots": [],
   "releases": [
     {
-      "file": "releases/translate-1.0.0.slp",
+      "version": "1.0.0",
+      "upload": "releases/translate-1.0.0.slp",
       "releasedAt": "2026-10-12T09:00:00Z",
       "changelog": "- 첫 공개 버전"
     }

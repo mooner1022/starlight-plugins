@@ -1,114 +1,50 @@
-"""Builds index.json from repository.json and plugins/<id>/plugin.json.
+"""Builds index.json from repository.json, plugin.json and published.json.
 
-Release metadata (version, PluginCore API, dependencies, native library use)
-is read from assets/starlight.json inside each .slp file, and the file size
-and SHA-256 are computed from the file itself, so they always match what the
-app downloads.
+Only releases already recorded in published.json (mirrored by CI) are listed,
+so this script never needs the plugin files themselves.
 
-Usage: python scripts/build_index.py
+Usage: python scripts/build_index.py [--check]
+  --check  validate and print the result without writing index.json
 """
 
-import hashlib
 import json
-import re
 import sys
-import zipfile
 from datetime import datetime, timezone
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-PLUGINS = ROOT / "plugins"
+from storelib import ROOT, StoreError, check_plugin, load_json, load_published, plugin_dirs, version_key, write_json
+
 SCHEMA_VERSION = 1
 
 
-class BuildError(Exception):
-    pass
-
-
-def fail(message):
-    raise BuildError(message)
-
-
-def version_key(version):
-    match = re.match(r"^(\d+)\.(\d+)\.(\d+)", version)
-    if not match:
-        fail(f"invalid version: {version}")
-    return tuple(int(part) for part in match.groups())
-
-
-def read_manifest(slp):
-    try:
-        with zipfile.ZipFile(slp) as archive:
-            return json.loads(archive.read("assets/starlight.json"))
-    except (zipfile.BadZipFile, KeyError, json.JSONDecodeError) as e:
-        fail(f"{slp.relative_to(ROOT)}: cannot read assets/starlight.json ({e})")
-
-
-def sha256_of(path):
-    digest = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
-def relative(path):
-    return path.relative_to(ROOT).as_posix()
-
-
-def build_release(plugin_id, plugin_dir, entry):
-    slp = plugin_dir / entry["file"]
-    if not slp.is_file():
-        fail(f"{plugin_id}: missing release file {entry['file']}")
-    manifest = read_manifest(slp)
-    if manifest.get("id") != plugin_id:
-        fail(f"{relative(slp)}: id is {manifest.get('id')!r}, expected {plugin_id!r}")
-    return {
-        "version": manifest["version"],
-        "apiVersion": manifest["api_version"],
-        "releasedAt": entry["releasedAt"],
-        "changelog": entry.get("changelog", ""),
-        "file": relative(slp),
-        "size": slp.stat().st_size,
-        "sha256": sha256_of(slp),
-        "dependency": manifest.get("dependency", []),
-        "nativeLibrary": manifest.get("uses_native_lib", False),
-    }, manifest
-
-
 def build_plugin(plugin_dir, repository):
-    source = json.loads((plugin_dir / "plugin.json").read_text(encoding="utf-8"))
-    plugin_id = source["id"]
-    if plugin_dir.name != plugin_id:
-        fail(f"plugins/{plugin_dir.name}: directory name must match id {plugin_id!r}")
-
-    categories = {category["id"] for category in repository["categories"]}
-    if source["category"] not in categories:
-        fail(f"{plugin_id}: unknown category {source['category']!r}")
-
-    built = [build_release(plugin_id, plugin_dir, entry) for entry in source["releases"]]
-    if not built:
-        fail(f"{plugin_id}: no releases")
-    built.sort(key=lambda pair: version_key(pair[0]["version"]), reverse=True)
-    versions = [release["version"] for release, _ in built]
-    if len(set(versions)) != len(versions):
-        fail(f"{plugin_id}: duplicate release versions")
-    latest_manifest = built[0][1]
+    source = check_plugin(plugin_dir, repository)
+    published = load_published(plugin_dir)
+    releases = []
+    for entry in source["releases"]:
+        record = published.get(entry["version"])
+        if record is None:
+            continue
+        releases.append({
+            "version": entry["version"],
+            "apiVersion": record["apiVersion"],
+            "releasedAt": entry["releasedAt"],
+            "changelog": entry.get("changelog", ""),
+            "url": record["url"],
+            "size": record["size"],
+            "sha256": record["sha256"],
+            "dependency": record["dependency"],
+            "nativeLibrary": record["nativeLibrary"],
+        })
+    if not releases:
+        return None
+    releases.sort(key=lambda release: version_key(release["version"]), reverse=True)
 
     verified = set(repository.get("verifiedAuthors", []))
     readme = plugin_dir / "README.md"
     icon = plugin_dir / "icon.png"
-
-    screenshots = []
-    for shot in source.get("screenshots", []):
-        image = plugin_dir / shot["file"]
-        if not image.is_file():
-            fail(f"{plugin_id}: missing screenshot {shot['file']}")
-        screenshots.append({"image": relative(image), "caption": shot.get("caption", "")})
-
     return {
-        "id": plugin_id,
-        "name": source.get("name") or latest_manifest["name"],
+        "id": source["id"],
+        "name": source["name"],
         "summary": source["summary"],
         "description": readme.read_text(encoding="utf-8").strip() if readme.is_file() else "",
         "authors": [
@@ -117,44 +53,55 @@ def build_plugin(plugin_dir, repository):
         ],
         "category": source["category"],
         "tags": source.get("tags", []),
-        "icon": relative(icon) if icon.is_file() else None,
-        "screenshots": screenshots,
+        "icon": icon.relative_to(ROOT).as_posix() if icon.is_file() else None,
+        "screenshots": [
+            {"image": (plugin_dir / shot["file"]).relative_to(ROOT).as_posix(), "caption": shot.get("caption", "")}
+            for shot in source.get("screenshots", [])
+        ],
         "license": source.get("license"),
         "source": source.get("source"),
         "publishedAt": source["publishedAt"],
-        "releases": [release for release, _ in built],
+        "releases": releases,
     }
 
 
-def main():
-    repository = json.loads((ROOT / "repository.json").read_text(encoding="utf-8"))
-    plugins = [
-        build_plugin(plugin_dir, repository)
-        for plugin_dir in sorted(PLUGINS.iterdir())
-        if (plugin_dir / "plugin.json").is_file()
-    ]
-
+def build():
+    repository = load_json(ROOT / "repository.json")
+    plugins = [plugin for plugin in (build_plugin(path, repository) for path in plugin_dirs()) if plugin]
     ids = {plugin["id"] for plugin in plugins}
-    for feature in repository.get("featured", []):
-        if feature["plugin"] not in ids:
-            fail(f"featured plugin {feature['plugin']!r} does not exist")
-
-    index = {
+    featured = [feature for feature in repository.get("featured", []) if feature["plugin"] in ids]
+    return {
         "schemaVersion": SCHEMA_VERSION,
         "name": repository["name"],
         "description": repository.get("description"),
-        "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "categories": repository["categories"],
-        "featured": repository.get("featured", []),
+        "featured": featured,
         "plugins": plugins,
     }
-    (ROOT / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"index.json: {len(plugins)} plugins")
+
+
+def main(check=False):
+    index = build()
+    path = ROOT / "index.json"
+    previous = load_json(path) if path.is_file() else {}
+    generated_at = previous.pop("generatedAt", None)
+    if previous == index and generated_at:
+        print(f"index.json: unchanged, {len(index['plugins'])} plugins")
+        return
+    if check:
+        print(f"index.json: would list {len(index['plugins'])} plugins")
+        return
+    stamp = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    ordered = {key: index[key] for key in ("schemaVersion", "name", "description")}
+    ordered["generatedAt"] = stamp
+    ordered.update((key, index[key]) for key in ("categories", "featured", "plugins"))
+    write_json(path, ordered)
+    print(f"index.json: {len(index['plugins'])} plugins")
 
 
 if __name__ == "__main__":
     try:
-        main()
-    except BuildError as e:
+        main(check="--check" in sys.argv[1:])
+    except StoreError as e:
         print(f"error: {e}", file=sys.stderr)
         sys.exit(1)
