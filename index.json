@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-28T12:29:04Z",
+  "generatedAt": "2026-10-28T13:09:55Z",
   "categories": [
     {
       "id": "messenger",
@@ -335,6 +335,43 @@
             "dev.mooner.sqlite@1.0.0",
             "dev.chart.core"
           ],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "summary": "JDA를 통한 디스코드 봇 연동을 지원해요",
+      "description": "디스코드 봇 API로 디스코드 서버의 메세지를 수신하고 관리할 수 있어요.",
+      "authors": [
+        {
+          "name": "mooner1022",
+          "url": "https://github.com/mooner1022",
+          "verified": true
+        }
+      ],
+      "category": "messenger",
+      "tags": [
+        "디스코드",
+        "브릿지",
+        "메신저"
+      ],
+      "icon": "plugins/discord/icon.png",
+      "screenshots": [],
+      "license": "GPL-3.0",
+      "source": "https://github.com/mooner1022/starlight-discord",
+      "publishedAt": "2026-10-28T09:00:00Z",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-28T09:00:00Z",
+          "changelog": "- JDA 전환",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/discord-v0.1.0/discord-0.1.0.slp",
+          "size": 3113143,
+          "sha256": "497c55235ff37d5f10eb9ffcba9630b25c9f9475a2e90aa6ad52214ecbc26590",
+          "dependency": [],
           "nativeLibrary": false
         }
       ]
