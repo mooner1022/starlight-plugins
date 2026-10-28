@@ -2,8 +2,6 @@
 
 Plugin repository for [Project StarLight](https://github.com/mooner1022/StarLight). The app's plugin store reads `index.json` from this repository and downloads plugin files from this repository's [Releases](../../releases).
 
-> The plugins currently listed here are **sample entries** used to build the store. Their `.slp` files are stub plugins that load but do nothing.
-
 ## Layout
 
 ```

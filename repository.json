@@ -43,17 +43,10 @@
   ],
   "featured": [
     {
-      "plugin": "dev.kyu.scheduler",
+      "plugin": "discord",
       "headline": {
-        "en": "Right on time, on its own",
-        "ko": "정해진 시간에, 알아서"
-      }
-    },
-    {
-      "plugin": "dev.mooner.netkit",
-      "headline": {
-        "en": "Give your scripts a network",
-        "ko": "스크립트에 네트워크 날개를"
+        "en": "KakaoTalk and Discord, together",
+        "ko": "카카오톡과 디스코드를 하나로"
       }
     }
   ]
