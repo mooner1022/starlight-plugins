@@ -1,0 +1,67 @@
+{
+  "name": "StarLight Plugins",
+  "description": "Official plugin repository for Project StarLight",
+  "verifiedAuthors": [
+    "mooner1022"
+  ],
+  "categories": [
+    {
+      "id": "messenger",
+      "name": {
+        "en": "Messengers",
+        "ko": "메신저 연동"
+      }
+    },
+    {
+      "id": "engine",
+      "name": {
+        "en": "Script engines",
+        "ko": "스크립트 엔진"
+      }
+    },
+    {
+      "id": "library",
+      "name": {
+        "en": "Libraries",
+        "ko": "라이브러리"
+      }
+    },
+    {
+      "id": "utility",
+      "name": {
+        "en": "Utilities",
+        "ko": "유틸리티"
+      }
+    },
+    {
+      "id": "devtools",
+      "name": {
+        "en": "Developer tools",
+        "ko": "개발 도구"
+      }
+    }
+  ],
+  "featured": [
+    {
+      "plugin": "dev.mooner.discord",
+      "headline": {
+        "en": "KakaoTalk and Discord, together",
+        "ko": "카카오톡과 디스코드를 하나로"
+      }
+    },
+    {
+      "plugin": "dev.kyu.scheduler",
+      "headline": {
+        "en": "Right on time, on its own",
+        "ko": "정해진 시간에, 알아서"
+      }
+    },
+    {
+      "plugin": "dev.mooner.netkit",
+      "headline": {
+        "en": "Give your scripts a network",
+        "ko": "스크립트에 네트워크 날개를"
+      }
+    }
+  ]
+}

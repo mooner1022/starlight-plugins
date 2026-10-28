@@ -1,0 +1,42 @@
+{
+  "id": "dev.mooner.netkit",
+  "name": "NetKit",
+  "summary": "스크립트에서 HTTP, 웹소켓을 쉽게 쓰게 해 주는 라이브러리",
+  "authors": [
+    {
+      "name": "mooner1022",
+      "url": "https://github.com/mooner1022"
+    }
+  ],
+  "category": "library",
+  "tags": [
+    "HTTP",
+    "웹소켓",
+    "라이브러리"
+  ],
+  "license": "MIT",
+  "source": "https://github.com/mooner1022/NetKit",
+  "publishedAt": "2025-12-12T09:00:00Z",
+  "screenshots": [
+    {
+      "file": "screenshots/1.png",
+      "caption": "요청 로그"
+    },
+    {
+      "file": "screenshots/2.png",
+      "caption": "캐시 설정"
+    }
+  ],
+  "releases": [
+    {
+      "file": "releases/netkit-1.4.2.slp",
+      "releasedAt": "2026-10-16T12:00:00Z",
+      "changelog": "- 응답 캐시 만료 시간 설정\n- 타임아웃 기본값 10초로 변경"
+    },
+    {
+      "file": "releases/netkit-1.4.0.slp",
+      "releasedAt": "2026-08-29T12:00:00Z",
+      "changelog": "- 웹소켓 자동 재연결"
+    }
+  ]
+}

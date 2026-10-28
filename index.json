@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "name": "StarLight Plugins",
+  "description": "Official plugin repository for Project StarLight",
+  "generatedAt": "2026-10-28T11:41:41Z",
+  "categories": [
+    {
+      "id": "messenger",
+      "name": {
+        "en": "Messengers",
+        "ko": "메신저 연동"
+      }
+    },
+    {
+      "id": "engine",
+      "name": {
+        "en": "Script engines",
+        "ko": "스크립트 엔진"
+      }
+    },
+    {
+      "id": "library",
+      "name": {
+        "en": "Libraries",
+        "ko": "라이브러리"
+      }
+    },
+    {
+      "id": "utility",
+      "name": {
+        "en": "Utilities",
+        "ko": "유틸리티"
+      }
+    },
+    {
+      "id": "devtools",
+      "name": {
+        "en": "Developer tools",
+        "ko": "개발 도구"
+      }
+    }
+  ],
+  "featured": [
+    {
+      "plugin": "dev.mooner.discord",
+      "headline": {
+        "en": "KakaoTalk and Discord, together",
+        "ko": "카카오톡과 디스코드를 하나로"
+      }
+    },
+    {
+      "plugin": "dev.kyu.scheduler",
+      "headline": {
+        "en": "Right on time, on its own",
+        "ko": "정해진 시간에, 알아서"
+      }
+    },
+    {
+      "plugin": "dev.mooner.netkit",
+      "headline": {
+        "en": "Give your scripts a network",
+        "ko": "스크립트에 네트워크 날개를"
+      }
+    }
+  ],
+  "plugins": [
+    {
+      "id": "dev.hana.telegram",
+      "name": "Telegram 브릿지",
+      "summary": "텔레그램 봇으로 메시지를 보내고 받아요",
+      "description": "텔레그램 봇 API로 카카오톡 방의 메시지를 전달해요.\n\n- 여러 채팅 연결\n- 명령어 메시지 필터",
+      "authors": [
+        {
+          "name": "hana",
+          "url": "https://github.com/hana-dev",
+          "verified": false
+        }
+      ],
+      "category": "messenger",
+      "tags": [
+        "텔레그램",
+        "브릿지"
+      ],
+      "icon": "plugins/dev.hana.telegram/icon.png",
+      "screenshots": [],
+      "license": "Apache-2.0",
+      "source": "https://github.com/hana-dev/sl-telegram",
+      "publishedAt": "2026-09-10T09:00:00Z",
+      "releases": [
+        {
+          "version": "0.3.1",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-28T03:00:00Z",
+          "changelog": "- 긴 메시지가 잘리던 문제 수정",
+          "file": "plugins/dev.hana.telegram/releases/telegram-0.3.1.slp",
+          "size": 901,
+          "sha256": "0efebdf71b7d70bff7a154c6ddc2fe0bf6d40fd1aae0cbc6a6c13cb5b6a13194",
+          "dependency": [
+            "dev.mooner.netkit@1.2.0"
+          ],
+          "nativeLibrary": false
+        },
+        {
+          "version": "0.3.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-08T12:00:00Z",
+          "changelog": "- 명령어 필터 추가",
+          "file": "plugins/dev.hana.telegram/releases/telegram-0.3.0.slp",
+          "size": 900,
+          "sha256": "9fc27cf3c828a83183d7110ee5286f74fe6481dd4637e2340f80aa333fd97d2b",
+          "dependency": [
+            "dev.mooner.netkit@1.2.0"
+          ],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "dev.kyu.scheduler",
+      "name": "스케줄러",
+      "summary": "정해진 시간에 프로젝트 이벤트를 실행해요",
+      "description": "크론 표현식이나 간단한 반복 규칙으로 프로젝트에 `onSchedule` 이벤트를 보내요.\n\n앱이 잠들어 있어도 정확한 시각에 깨우도록 알람을 사용해요.",
+      "authors": [
+        {
+          "name": "kyu",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "category": "utility",
+      "tags": [
+        "자동화",
+        "크론",
+        "알람"
+      ],
+      "icon": "plugins/dev.kyu.scheduler/icon.png",
+      "screenshots": [
+        {
+          "image": "plugins/dev.kyu.scheduler/screenshots/1.png",
+          "caption": "일정 목록"
+        },
+        {
+          "image": "plugins/dev.kyu.scheduler/screenshots/2.png",
+          "caption": "규칙 편집"
+        }
+      ],
+      "license": "MIT",
+      "source": null,
+      "publishedAt": "2026-07-30T09:00:00Z",
+      "releases": [
+        {
+          "version": "2.0.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-27T12:00:00Z",
+          "changelog": "- 크론 표현식 지원\n- 설정 구조가 바뀌어 이전 일정은 다시 등록해야 해요",
+          "file": "plugins/dev.kyu.scheduler/releases/scheduler-2.0.0.slp",
+          "size": 891,
+          "sha256": "6a1feb74353aa8685617f2386392ef1baa970e2512a17472a9102a0906b632c2",
+          "dependency": [],
+          "nativeLibrary": false
+        },
+        {
+          "version": "1.3.0",
+          "apiVersion": "0.3.0",
+          "releasedAt": "2026-07-30T09:00:00Z",
+          "changelog": "- 요일 반복",
+          "file": "plugins/dev.kyu.scheduler/releases/scheduler-1.3.0.slp",
+          "size": 888,
+          "sha256": "372a849938e742c6f6e7792235da543062e32220eae1bb28b2ce8c498954d2ba",
+          "dependency": [],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "dev.mooner.discord",
+      "name": "Discord 브릿지",
+      "summary": "카카오톡 방과 디스코드 채널을 서로 연결해요",
+      "description": "카카오톡 방과 디스코드 채널의 메시지를 양방향으로 주고받을 수 있게 해 주는 플러그인이에요.\n\n**주요 기능**\n- 방마다 연결할 채널을 따로 지정\n- 이미지, 이모티콘을 링크로 변환해 전달\n- 프로젝트에서 `discord.send()`로 직접 메시지 전송\n\n봇 토큰은 플러그인 설정에서 입력하며, 기기 밖으로 전송되지 않아요.",
+      "authors": [
+        {
+          "name": "mooner1022",
+          "url": "https://github.com/mooner1022",
+          "verified": true
+        }
+      ],
+      "category": "messenger",
+      "tags": [
+        "디스코드",
+        "브릿지",
+        "메신저"
+      ],
+      "icon": "plugins/dev.mooner.discord/icon.png",
+      "screenshots": [
+        {
+          "image": "plugins/dev.mooner.discord/screenshots/1.png",
+          "caption": "채널 연결 설정"
+        },
+        {
+          "image": "plugins/dev.mooner.discord/screenshots/2.png",
+          "caption": "메시지 전달"
+        },
+        {
+          "image": "plugins/dev.mooner.discord/screenshots/3.png",
+          "caption": "프로젝트 API"
+        }
+      ],
+      "license": "GPL-3.0",
+      "source": "https://github.com/mooner1022/DiscordPlugin",
+      "publishedAt": "2026-04-01T09:00:00Z",
+      "releases": [
+        {
+          "version": "1.2.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-26T12:00:00Z",
+          "changelog": "- 스레드 메시지 전달 지원\n- 재연결이 끊기던 문제 수정",
+          "file": "plugins/dev.mooner.discord/releases/discord-1.2.0.slp",
+          "size": 897,
+          "sha256": "eb1ac9291da11d207b6f33e6de8f2bef136477a57850f11055374d2d851c9681",
+          "dependency": [],
+          "nativeLibrary": false
+        },
+        {
+          "version": "1.1.0",
+          "apiVersion": "0.3.0",
+          "releasedAt": "2026-09-24T12:00:00Z",
+          "changelog": "- 방마다 채널 지정\n- 이미지 링크 변환",
+          "file": "plugins/dev.mooner.discord/releases/discord-1.1.0.slp",
+          "size": 897,
+          "sha256": "0d4c50bbd98133ae569fcb3504f24efc900b4b8a8c3206d09bfe5f41bc8c6a54",
+          "dependency": [],
+          "nativeLibrary": false
+        },
+        {
+          "version": "1.0.0",
+          "apiVersion": "0.2.0",
+          "releasedAt": "2026-04-01T09:00:00Z",
+          "changelog": "- 첫 공개 버전",
+          "file": "plugins/dev.mooner.discord/releases/discord-1.0.0.slp",
+          "size": 895,
+          "sha256": "2d3183f442080b9c8dd00477df20dfb9403253d8f81144917b654947a2ff1eda",
+          "dependency": [],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "dev.mooner.netkit",
+      "name": "NetKit",
+      "summary": "스크립트에서 HTTP, 웹소켓을 쉽게 쓰게 해 주는 라이브러리",
+      "description": "프로젝트와 다른 플러그인이 함께 쓰는 네트워크 라이브러리예요.\n\n- `http.get`, `http.post` 등 간단한 요청 API\n- 자동 재연결되는 웹소켓\n- 응답 캐시와 요청 제한",
+      "authors": [
+        {
+          "name": "mooner1022",
+          "url": "https://github.com/mooner1022",
+          "verified": true
+        }
+      ],
+      "category": "library",
+      "tags": [
+        "HTTP",
+        "웹소켓",
+        "라이브러리"
+      ],
+      "icon": "plugins/dev.mooner.netkit/icon.png",
+      "screenshots": [
+        {
+          "image": "plugins/dev.mooner.netkit/screenshots/1.png",
+          "caption": "요청 로그"
+        },
+        {
+          "image": "plugins/dev.mooner.netkit/screenshots/2.png",
+          "caption": "캐시 설정"
+        }
+      ],
+      "license": "MIT",
+      "source": "https://github.com/mooner1022/NetKit",
+      "publishedAt": "2025-12-12T09:00:00Z",
+      "releases": [
+        {
+          "version": "1.4.2",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-16T12:00:00Z",
+          "changelog": "- 응답 캐시 만료 시간 설정\n- 타임아웃 기본값 10초로 변경",
+          "file": "plugins/dev.mooner.netkit/releases/netkit-1.4.2.slp",
+          "size": 903,
+          "sha256": "53c218fe023e6c2df24f7657d3c4971707f61ce26ca9f283d7094ea89c3d22b6",
+          "dependency": [],
+          "nativeLibrary": false
+        },
+        {
+          "version": "1.4.0",
+          "apiVersion": "0.3.0",
+          "releasedAt": "2026-08-29T12:00:00Z",
+          "changelog": "- 웹소켓 자동 재연결",
+          "file": "plugins/dev.mooner.netkit/releases/netkit-1.4.0.slp",
+          "size": 903,
+          "sha256": "5dfb28c9637fc7bd7dca8422a3872b494ae6f7ad53fb716cd1b048deb00c7b2d",
+          "dependency": [],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "dev.mooner.sqlite",
+      "name": "SQLite 저장소",
+      "summary": "프로젝트마다 SQLite 데이터베이스를 제공해요",
+      "description": "프로젝트별로 분리된 SQLite 데이터베이스와 간단한 쿼리 API를 제공해요.\n\n빠른 처리를 위해 네이티브 라이브러리를 포함하고 있어요.",
+      "authors": [
+        {
+          "name": "mooner1022",
+          "url": "https://github.com/mooner1022",
+          "verified": true
+        },
+        {
+          "name": "lumi",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "category": "library",
+      "tags": [
+        "데이터베이스",
+        "저장소",
+        "네이티브"
+      ],
+      "icon": "plugins/dev.mooner.sqlite/icon.png",
+      "screenshots": [],
+      "license": "GPL-3.0",
+      "source": "https://github.com/mooner1022/sl-sqlite",
+      "publishedAt": "2026-05-31T09:00:00Z",
+      "releases": [
+        {
+          "version": "1.0.3",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-19T12:00:00Z",
+          "changelog": "- 트랜잭션 API 추가",
+          "file": "plugins/dev.mooner.sqlite/releases/sqlite-1.0.3.slp",
+          "size": 897,
+          "sha256": "66432c04bcd93c4ad2d61887c8f7183be8eec1fe5ac0e7333de2ad330b5ca1a2",
+          "dependency": [],
+          "nativeLibrary": true
+        }
+      ]
+    },
+    {
+      "id": "dev.snake.pyengine",
+      "name": "Python 엔진",
+      "summary": "파이썬으로 프로젝트를 작성할 수 있게 해요",
+      "description": "Chaquopy 기반의 파이썬 스크립트 엔진이에요. 아직 새 PluginCore를 지원하지 않아요.",
+      "authors": [
+        {
+          "name": "snake",
+          "url": "https://github.com/snake",
+          "verified": false
+        }
+      ],
+      "category": "engine",
+      "tags": [
+        "파이썬",
+        "스크립트 엔진"
+      ],
+      "icon": "plugins/dev.snake.pyengine/icon.png",
+      "screenshots": [],
+      "license": "MIT",
+      "source": "https://github.com/snake/sl-python",
+      "publishedAt": "2025-09-23T09:00:00Z",
+      "releases": [
+        {
+          "version": "0.9.0",
+          "apiVersion": "0.2.1",
+          "releasedAt": "2026-05-01T12:00:00Z",
+          "changelog": "- Python 3.11",
+          "file": "plugins/dev.snake.pyengine/releases/pyengine-0.9.0.slp",
+          "size": 890,
+          "sha256": "0fcd976e5d2dcbcf58954efad437cf5ba8260439b531d4c3ea62c030acc271a3",
+          "dependency": [],
+          "nativeLibrary": true
+        }
+      ]
+    },
+    {
+      "id": "dev.stat.dashboard",
+      "name": "통계 대시보드",
+      "summary": "방별 메시지 통계를 그래프로 보여 줘요",
+      "description": "SQLite 저장소에 쌓인 메시지 기록으로 방별, 시간대별 통계를 만들어요.",
+      "authors": [
+        {
+          "name": "stat",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "category": "devtools",
+      "tags": [
+        "통계",
+        "그래프"
+      ],
+      "icon": "plugins/dev.stat.dashboard/icon.png",
+      "screenshots": [],
+      "license": "GPL-3.0",
+      "source": "https://github.com/stat/sl-dashboard",
+      "publishedAt": "2026-08-19T09:00:00Z",
+      "releases": [
+        {
+          "version": "0.5.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-25T12:00:00Z",
+          "changelog": "- 주간 리포트",
+          "file": "plugins/dev.stat.dashboard/releases/dashboard-0.5.0.slp",
+          "size": 912,
+          "sha256": "6a66479e773d39273e86d374218735945fb1cb0f4cf1ba46c826d53092409e9d",
+          "dependency": [
+            "dev.mooner.sqlite@1.0.0",
+            "dev.chart.core"
+          ],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "io.lingo.translate",
+      "name": "자동 번역",
+      "summary": "메시지를 원하는 언어로 번역해 보여 줘요",
+      "description": "번역 API를 프로젝트에 제공해요. NetKit이 있으면 응답을 캐시해서 더 빨라요.",
+      "authors": [
+        {
+          "name": "lingo",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "category": "utility",
+      "tags": [
+        "번역",
+        "언어"
+      ],
+      "icon": "plugins/io.lingo.translate/icon.png",
+      "screenshots": [],
+      "license": "MIT",
+      "source": null,
+      "publishedAt": "2026-10-12T09:00:00Z",
+      "releases": [
+        {
+          "version": "1.0.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-12T09:00:00Z",
+          "changelog": "- 첫 공개 버전",
+          "file": "plugins/io.lingo.translate/releases/translate-1.0.0.slp",
+          "size": 900,
+          "sha256": "563dbef051dbc1175e4d2932a00f3bd949eb6b691e67856e2824a5c19b50176f",
+          "dependency": [
+            "dev.mooner.netkit?"
+          ],
+          "nativeLibrary": false
+        }
+      ]
+    }
+  ]
+}
