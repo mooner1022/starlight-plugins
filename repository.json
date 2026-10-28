@@ -43,13 +43,6 @@
   ],
   "featured": [
     {
-      "plugin": "dev.mooner.discord",
-      "headline": {
-        "en": "KakaoTalk and Discord, together",
-        "ko": "카카오톡과 디스코드를 하나로"
-      }
-    },
-    {
       "plugin": "dev.kyu.scheduler",
       "headline": {
         "en": "Right on time, on its own",
