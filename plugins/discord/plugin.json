@@ -1,0 +1,29 @@
+{
+  "id": "discord",
+  "name": "Discord",
+  "summary": "JDA를 통한 디스코드 봇 연동을 지원해요",
+  "authors": [
+    {
+      "name": "mooner1022",
+      "url": "https://github.com/mooner1022"
+    }
+  ],
+  "category": "messenger",
+  "tags": [
+    "디스코드",
+    "브릿지",
+    "메신저"
+  ],
+  "license": "GPL-3.0",
+  "source": "https://github.com/mooner1022/starlight-discord",
+  "publishedAt": "2026-10-28T09:00:00Z",
+  "screenshots": [],
+  "releases": [
+    {
+      "version": "0.1.0",
+      "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.1.0/discord-0.1.0.slp",
+      "releasedAt": "2026-10-28T09:00:00Z",
+      "changelog": "- JDA 전환"
+    }
+  ]
+}
