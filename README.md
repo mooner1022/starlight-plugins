@@ -22,13 +22,15 @@ Plugin files are not kept in the git tree. Each published version is a GitHub Re
 
 ## Publishing a plugin or an update
 
-You only need your own plugin directory:
+You only need your own plugin directory and the scripts:
 
 ```sh
 git clone --filter=blob:none --sparse https://github.com/mooner1022/starlight-plugins.git
 cd starlight-plugins
-git sparse-checkout set plugins/<plugin id>
+git sparse-checkout set plugins/<plugin id> scripts
 ```
+
+A sparse checkout includes the files at the repository root (`repository.json`, `index.json`) but no other directories, so list `scripts` to run the local check.
 
 1. Release the `.slp` file on your own GitHub repository (recommended), or attach it to the pull request.
 2. Add or edit `plugins/<plugin id>/plugin.json` with a new entry in `releases`.
