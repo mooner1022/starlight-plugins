@@ -1,0 +1,14 @@
+{
+  "1.0.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [
+      "dev.mooner.netkit?"
+    ],
+    "nativeLibrary": false,
+    "size": 900,
+    "sha256": "563dbef051dbc1175e4d2932a00f3bd949eb6b691e67856e2824a5c19b50176f",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/io.lingo.translate-v1.0.0/io.lingo.translate-1.0.0.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  }
+}

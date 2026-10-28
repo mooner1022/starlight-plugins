@@ -1,0 +1,22 @@
+{
+  "1.3.0": {
+    "apiVersion": "0.3.0",
+    "dependency": [],
+    "nativeLibrary": false,
+    "size": 888,
+    "sha256": "372a849938e742c6f6e7792235da543062e32220eae1bb28b2ce8c498954d2ba",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.kyu.scheduler-v1.3.0/dev.kyu.scheduler-1.3.0.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  },
+  "2.0.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [],
+    "nativeLibrary": false,
+    "size": 891,
+    "sha256": "6a1feb74353aa8685617f2386392ef1baa970e2512a17472a9102a0906b632c2",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.kyu.scheduler-v2.0.0/dev.kyu.scheduler-2.0.0.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  }
+}

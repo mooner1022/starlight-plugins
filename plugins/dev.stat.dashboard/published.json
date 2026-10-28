@@ -1,0 +1,15 @@
+{
+  "0.5.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [
+      "dev.mooner.sqlite@1.0.0",
+      "dev.chart.core"
+    ],
+    "nativeLibrary": false,
+    "size": 912,
+    "sha256": "6a66479e773d39273e86d374218735945fb1cb0f4cf1ba46c826d53092409e9d",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.stat.dashboard-v0.5.0/dev.stat.dashboard-0.5.0.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  }
+}

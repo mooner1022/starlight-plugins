@@ -1,0 +1,12 @@
+{
+  "0.9.0": {
+    "apiVersion": "0.2.1",
+    "dependency": [],
+    "nativeLibrary": true,
+    "size": 890,
+    "sha256": "0fcd976e5d2dcbcf58954efad437cf5ba8260439b531d4c3ea62c030acc271a3",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.snake.pyengine-v0.9.0/dev.snake.pyengine-0.9.0.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  }
+}

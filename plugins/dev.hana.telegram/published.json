@@ -1,0 +1,26 @@
+{
+  "0.3.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [
+      "dev.mooner.netkit@1.2.0"
+    ],
+    "nativeLibrary": false,
+    "size": 900,
+    "sha256": "9fc27cf3c828a83183d7110ee5286f74fe6481dd4637e2340f80aa333fd97d2b",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.hana.telegram-v0.3.0/dev.hana.telegram-0.3.0.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  },
+  "0.3.1": {
+    "apiVersion": "0.3.2",
+    "dependency": [
+      "dev.mooner.netkit@1.2.0"
+    ],
+    "nativeLibrary": false,
+    "size": 901,
+    "sha256": "0efebdf71b7d70bff7a154c6ddc2fe0bf6d40fd1aae0cbc6a6c13cb5b6a13194",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.hana.telegram-v0.3.1/dev.hana.telegram-0.3.1.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  }
+}

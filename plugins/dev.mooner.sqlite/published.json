@@ -1,0 +1,12 @@
+{
+  "1.0.3": {
+    "apiVersion": "0.3.2",
+    "dependency": [],
+    "nativeLibrary": true,
+    "size": 897,
+    "sha256": "66432c04bcd93c4ad2d61887c8f7183be8eec1fe5ac0e7333de2ad330b5ca1a2",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.mooner.sqlite-v1.0.3/dev.mooner.sqlite-1.0.3.slp",
+    "origin": null,
+    "publishedAt": "2026-10-28T12:15:16Z"
+  }
+}
