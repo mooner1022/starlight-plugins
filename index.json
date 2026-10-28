@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-28T12:15:52Z",
+  "generatedAt": "2026-10-28T12:29:04Z",
   "categories": [
     {
       "id": "messenger",
@@ -41,13 +41,6 @@
     }
   ],
   "featured": [
-    {
-      "plugin": "dev.mooner.discord",
-      "headline": {
-        "en": "KakaoTalk and Discord, together",
-        "ko": "카카오톡과 디스코드를 하나로"
-      }
-    },
     {
       "plugin": "dev.kyu.scheduler",
       "headline": {
@@ -167,78 +160,6 @@
           "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.kyu.scheduler-v1.3.0/dev.kyu.scheduler-1.3.0.slp",
           "size": 888,
           "sha256": "372a849938e742c6f6e7792235da543062e32220eae1bb28b2ce8c498954d2ba",
-          "dependency": [],
-          "nativeLibrary": false
-        }
-      ]
-    },
-    {
-      "id": "dev.mooner.discord",
-      "name": "Discord 브릿지",
-      "summary": "카카오톡 방과 디스코드 채널을 서로 연결해요",
-      "description": "카카오톡 방과 디스코드 채널의 메시지를 양방향으로 주고받을 수 있게 해 주는 플러그인이에요.\n\n**주요 기능**\n- 방마다 연결할 채널을 따로 지정\n- 이미지, 이모티콘을 링크로 변환해 전달\n- 프로젝트에서 `discord.send()`로 직접 메시지 전송\n\n봇 토큰은 플러그인 설정에서 입력하며, 기기 밖으로 전송되지 않아요.",
-      "authors": [
-        {
-          "name": "mooner1022",
-          "url": "https://github.com/mooner1022",
-          "verified": true
-        }
-      ],
-      "category": "messenger",
-      "tags": [
-        "디스코드",
-        "브릿지",
-        "메신저"
-      ],
-      "icon": "plugins/dev.mooner.discord/icon.png",
-      "screenshots": [
-        {
-          "image": "plugins/dev.mooner.discord/screenshots/1.png",
-          "caption": "채널 연결 설정"
-        },
-        {
-          "image": "plugins/dev.mooner.discord/screenshots/2.png",
-          "caption": "메시지 전달"
-        },
-        {
-          "image": "plugins/dev.mooner.discord/screenshots/3.png",
-          "caption": "프로젝트 API"
-        }
-      ],
-      "license": "GPL-3.0",
-      "source": "https://github.com/mooner1022/DiscordPlugin",
-      "publishedAt": "2026-04-01T09:00:00Z",
-      "releases": [
-        {
-          "version": "1.2.0",
-          "apiVersion": "0.3.2",
-          "releasedAt": "2026-10-26T12:00:00Z",
-          "changelog": "- 스레드 메시지 전달 지원\n- 재연결이 끊기던 문제 수정",
-          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.mooner.discord-v1.2.0/dev.mooner.discord-1.2.0.slp",
-          "size": 897,
-          "sha256": "eb1ac9291da11d207b6f33e6de8f2bef136477a57850f11055374d2d851c9681",
-          "dependency": [],
-          "nativeLibrary": false
-        },
-        {
-          "version": "1.1.0",
-          "apiVersion": "0.3.0",
-          "releasedAt": "2026-09-24T12:00:00Z",
-          "changelog": "- 방마다 채널 지정\n- 이미지 링크 변환",
-          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.mooner.discord-v1.1.0/dev.mooner.discord-1.1.0.slp",
-          "size": 897,
-          "sha256": "0d4c50bbd98133ae569fcb3504f24efc900b4b8a8c3206d09bfe5f41bc8c6a54",
-          "dependency": [],
-          "nativeLibrary": false
-        },
-        {
-          "version": "1.0.0",
-          "apiVersion": "0.2.0",
-          "releasedAt": "2026-04-01T09:00:00Z",
-          "changelog": "- 첫 공개 버전",
-          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/dev.mooner.discord-v1.0.0/dev.mooner.discord-1.0.0.slp",
-          "size": 895,
-          "sha256": "2d3183f442080b9c8dd00477df20dfb9403253d8f81144917b654947a2ff1eda",
           "dependency": [],
           "nativeLibrary": false
         }
