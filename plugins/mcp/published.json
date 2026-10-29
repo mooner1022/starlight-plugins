@@ -10,5 +10,18 @@
     "url": "https://github.com/mooner1022/starlight-plugins/releases/download/mcp-v0.1.0/mcp-0.1.0.slp",
     "origin": "https://github.com/mooner1022/starlight-mcp/releases/download/v0.1.0/mcp-0.1.0.slp",
     "publishedAt": "2026-10-29T05:31:38Z"
+  },
+  "0.2.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [
+      "ktor@3.6.0",
+      "workspace@1.0.0"
+    ],
+    "nativeLibrary": false,
+    "size": 102810,
+    "sha256": "2f8377acf8aa0039d8de45f139047e5fbd5ca55384bb2eec635da4e75a5c04b8",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/mcp-v0.2.0/mcp-0.2.0.slp",
+    "origin": "https://github.com/mooner1022/starlight-mcp/releases/download/v0.2.0/mcp-0.2.0.slp",
+    "publishedAt": "2026-10-29T07:53:34Z"
   }
 }
