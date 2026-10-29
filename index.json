@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-29T05:31:43Z",
+  "generatedAt": "2026-10-29T05:35:44Z",
   "categories": [
     {
       "id": "messenger",
@@ -168,7 +168,7 @@
       "id": "webserver",
       "name": "Web Server",
       "summary": "스크립트로 HTTP 요청을 처리하는 웹 서버를 열 수 있어요",
-      "description": "기기에서 HTTP 서버를 열고, 들어온 요청을 프로젝트 스크립트로 처리할 수 있어요.\n웹훅 수신, 봇 상태 API, 간단한 웹 페이지 제공 등에 쓸 수 있어요.\n\n## 사용법\n\n프로젝트 설정에서 **웹 서버 설정** 이벤트를 허용하고 함수를 작성하세요. 프로젝트가 컴파일될 때마다 호출돼요.\n\n```js\nexport function onWebServerSetup(server) {\n    // 반환값이 응답이 돼요. 객체는 JSON, 문자열은 텍스트로 보내요.\n    server.get(\"/hello/:name\", (req) => ({ hello: req.params.name }));\n\n    // res로 직접 응답하거나, async 함수로 비동기 처리도 할 수 있어요.\n    server.post(\"/webhook\", async (req, res) => {\n        const data = JSON.parse(req.body);\n        res.status(201).json({ received: true });\n    });\n\n    // 프로젝트 폴더의 public 디렉터리를 /files 아래로 제공해요.\n    server.serveStatic(\"/files\", \"public\");\n}\n```\n\nNeonJS에서는 함수를 `export` 해야 해요. Rhino에서는 `export` 없이 쓰거나, 전역 `WebServer` 객체로 바로 등록할 수 있어요.\n\n## 기능\n\n- `:param`, `*` 경로 패턴과 GET/POST/PUT/PATCH/DELETE 등 모든 메서드\n- `req.params`, `req.query`, `req.headers`, `req.body`, `req.form`\n- `res.status()`, `res.json()`, `res.send()`, `res.html()`, `res.file()`, `res.redirect()`\n- 접근 토큰 인증(Bearer 또는 `?token=`), CORS, 본문 크기·처리 시간 제한\n- 서버 상태, 접속 주소, 요청 그래프와 최근 요청을 보여주는 홈 위젯\n\n자세한 API는 [GitHub](https://github.com/mooner1022/starlight-webserver)를 참고하세요.",
+      "description": "기기에서 HTTP 서버를 열고, 들어온 요청을 프로젝트 스크립트로 처리할 수 있어요.\n웹훅 수신, 봇 상태 API, 간단한 웹 페이지 제공 등에 쓸 수 있어요.\n\n**Ktor** 플러그인이 함께 설치돼요.\n\n## 사용법\n\n프로젝트 설정에서 **웹 서버 설정** 이벤트를 허용하고 함수를 작성하세요. 프로젝트가 컴파일될 때마다 호출돼요.\n\n```js\nexport function onWebServerSetup(server) {\n    // 반환값이 응답이 돼요. 객체는 JSON, 문자열은 텍스트로 보내요.\n    server.get(\"/hello/:name\", (req) => ({ hello: req.params.name }));\n\n    // res로 직접 응답하거나, async 함수로 비동기 처리도 할 수 있어요.\n    server.post(\"/webhook\", async (req, res) => {\n        const data = JSON.parse(req.body);\n        res.status(201).json({ received: true });\n    });\n\n    // 프로젝트 폴더의 public 디렉터리를 /files 아래로 제공해요.\n    server.serveStatic(\"/files\", \"public\");\n}\n```\n\nNeonJS에서는 함수를 `export` 해야 해요. Rhino에서는 `export` 없이 쓰거나, 전역 `WebServer` 객체로 바로 등록할 수 있어요.\n\n## 기능\n\n- `:param`, `*` 경로 패턴과 GET/POST/PUT/PATCH/DELETE 등 모든 메서드\n- `req.params`, `req.query`, `req.headers`, `req.body`, `req.form`\n- `res.status()`, `res.json()`, `res.send()`, `res.html()`, `res.file()`, `res.redirect()`\n- 접근 토큰 인증(Bearer 또는 `?token=`), CORS, 본문 크기·처리 시간 제한\n- 서버 상태, 접속 주소, 요청 그래프와 최근 요청을 보여주는 홈 위젯\n\n자세한 API는 [GitHub](https://github.com/mooner1022/starlight-webserver)를 참고하세요.",
       "authors": [
         {
           "name": "mooner1022",
@@ -189,6 +189,19 @@
       "source": "https://github.com/mooner1022/starlight-webserver",
       "publishedAt": "2026-10-29T04:50:06Z",
       "releases": [
+        {
+          "version": "0.1.1",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T05:34:41Z",
+          "changelog": "- Ktor를 직접 포함하지 않고 Ktor 플러그인에서 불러와요 (함께 설치돼요)\n- MCP 등 Ktor를 쓰는 다른 플러그인과 함께 써도 충돌하지 않아요\n- 플러그인 크기가 1.1MB에서 90KB로 줄었어요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/webserver-v0.1.1/webserver-0.1.1.slp",
+          "size": 91346,
+          "sha256": "46d60e15ef7bd61e66716eb03b2ec381f975349c00c3dee8fda9c21029a80bd5",
+          "dependency": [
+            "ktor@3.6.0"
+          ],
+          "nativeLibrary": false
+        },
         {
           "version": "0.1.0",
           "apiVersion": "0.3.2",
