@@ -1,0 +1,29 @@
+{
+  "id": "ktor",
+  "name": "Ktor",
+  "summary": "다른 플러그인이 함께 쓰는 Ktor 런타임이에요",
+  "authors": [
+    {
+      "name": "mooner1022",
+      "url": "https://github.com/mooner1022"
+    }
+  ],
+  "category": "library",
+  "tags": [
+    "라이브러리",
+    "Ktor",
+    "HTTP"
+  ],
+  "license": "GPL-3.0",
+  "source": "https://github.com/mooner1022/starlight-ktor",
+  "publishedAt": "2026-10-29T05:25:43Z",
+  "screenshots": [],
+  "releases": [
+    {
+      "version": "3.6.0",
+      "source": "https://github.com/mooner1022/starlight-ktor/releases/download/v3.6.0/ktor-3.6.0.slp",
+      "releasedAt": "2026-10-29T05:25:43Z",
+      "changelog": "- 첫 릴리즈 (Ktor 3.6.0)"
+    }
+  ]
+}
