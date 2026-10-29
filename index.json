@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-29T04:51:16Z",
+  "generatedAt": "2026-10-29T05:30:56Z",
   "categories": [
     {
       "id": "messenger",
@@ -82,6 +82,43 @@
           "url": "https://github.com/mooner1022/starlight-plugins/releases/download/discord-v0.1.0/discord-0.1.0.slp",
           "size": 3113143,
           "sha256": "497c55235ff37d5f10eb9ffcba9630b25c9f9475a2e90aa6ad52214ecbc26590",
+          "dependency": [],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "ktor",
+      "name": "Ktor",
+      "summary": "다른 플러그인이 함께 쓰는 Ktor 런타임이에요",
+      "description": "다른 StarLight 플러그인이 함께 쓰는 [Ktor](https://ktor.io) 3.6.0 런타임(CIO 서버)이에요.\n이 플러그인만으로는 아무 일도 하지 않고, 이 플러그인이 필요한 플러그인을 설치하면 함께 설치돼요.\n\n## 포함된 것\n\n- Ktor CIO 서버 3.6.0\n- Ktor 로그를 StarLight 로그(`Ktor/…` 태그)로 보내는 SLF4J 연결\n\n## 플러그인 개발자라면\n\nKtor를 플러그인에 직접 넣지 말고 이 플러그인에 의존하세요. 여러 플러그인이 Ktor를 하나만 불러와서 용량과 메모리를 아낄 수 있어요.\n\n```json\n\"dependency\": [\"ktor@3.6.0\"]\n```\n\n```groovy\ncompileOnly \"io.ktor:ktor-server-cio:3.6.0\"\n```\n\n자세한 내용은 [GitHub](https://github.com/mooner1022/starlight-ktor)를 참고하세요.",
+      "authors": [
+        {
+          "name": "mooner1022",
+          "url": "https://github.com/mooner1022",
+          "verified": true
+        }
+      ],
+      "category": "library",
+      "tags": [
+        "라이브러리",
+        "Ktor",
+        "HTTP"
+      ],
+      "icon": "plugins/ktor/icon.png",
+      "screenshots": [],
+      "license": "GPL-3.0",
+      "source": "https://github.com/mooner1022/starlight-ktor",
+      "publishedAt": "2026-10-29T05:25:43Z",
+      "releases": [
+        {
+          "version": "3.6.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T05:25:43Z",
+          "changelog": "- 첫 릴리즈 (Ktor 3.6.0)",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ktor-v3.6.0/ktor-3.6.0.slp",
+          "size": 1026574,
+          "sha256": "b725233a11c7eb6ddad7d89900b526ba7fe693114ea8529a4756981e96d284bc",
           "dependency": [],
           "nativeLibrary": false
         }

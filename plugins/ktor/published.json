@@ -1,0 +1,12 @@
+{
+  "3.6.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [],
+    "nativeLibrary": false,
+    "size": 1026574,
+    "sha256": "b725233a11c7eb6ddad7d89900b526ba7fe693114ea8529a4756981e96d284bc",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ktor-v3.6.0/ktor-3.6.0.slp",
+    "origin": "https://github.com/mooner1022/starlight-ktor/releases/download/v3.6.0/ktor-3.6.0.slp",
+    "publishedAt": "2026-10-29T05:30:52Z"
+  }
+}
