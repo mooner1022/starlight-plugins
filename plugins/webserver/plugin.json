@@ -21,6 +21,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.1.2",
+      "source": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.1.2/webserver-0.1.2.slp",
+      "releasedAt": "2026-10-29T11:24:44Z",
+      "changelog": "- 다운로드를 중간에 멈추거나 연결이 끊긴 요청을 오류로 기록하지 않아요 (통계의 오류 수에서도 빠져요)\n- 플러그인 정보에 분류(유틸리티)를 추가했어요"
+    },
+    {
       "version": "0.1.1",
       "source": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.1.1/webserver-0.1.1.slp",
       "releasedAt": "2026-10-29T05:34:41Z",
