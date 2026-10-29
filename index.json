@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-29T07:54:19Z",
+  "generatedAt": "2026-10-29T09:27:40Z",
   "categories": [
     {
       "id": "messenger",
@@ -293,6 +293,17 @@
       "source": "https://github.com/mooner1022/starlight-workspace",
       "publishedAt": "2026-10-29T07:51:10Z",
       "releases": [
+        {
+          "version": "1.0.1",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T09:26:43Z",
+          "changelog": "- 컴파일되지 않은 프로젝트를 켜려 하면 먼저 컴파일하라고 알려 줘요\n- 컴파일되지 않은 프로젝트는 항상 꺼진 상태로 다뤄요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/workspace-v1.0.1/workspace-1.0.1.slp",
+          "size": 111126,
+          "sha256": "2a586143bd93564b0c7f299b7506a1a4a25243d9471bc0c724673313af7711d3",
+          "dependency": [],
+          "nativeLibrary": false
+        },
         {
           "version": "1.0.0",
           "apiVersion": "0.3.2",
