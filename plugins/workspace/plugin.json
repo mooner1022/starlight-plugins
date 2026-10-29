@@ -1,0 +1,28 @@
+{
+  "id": "workspace",
+  "name": "Workspace",
+  "summary": "MCP·웹 IDE 같은 도구 플러그인이 함께 쓰는 프로젝트 작업 라이브러리예요",
+  "authors": [
+    {
+      "name": "mooner1022",
+      "url": "https://github.com/mooner1022"
+    }
+  ],
+  "category": "library",
+  "tags": [
+    "라이브러리",
+    "개발 도구"
+  ],
+  "license": "GPL-3.0",
+  "source": "https://github.com/mooner1022/starlight-workspace",
+  "publishedAt": "2026-10-29T07:51:10Z",
+  "screenshots": [],
+  "releases": [
+    {
+      "version": "1.0.0",
+      "source": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.0/workspace-1.0.0.slp",
+      "releasedAt": "2026-10-29T07:51:10Z",
+      "changelog": "- 첫 릴리즈"
+    }
+  ]
+}
