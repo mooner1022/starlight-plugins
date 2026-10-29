@@ -19,6 +19,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "1.0.1",
+      "source": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.1/workspace-1.0.1.slp",
+      "releasedAt": "2026-10-29T09:26:43Z",
+      "changelog": "- 컴파일되지 않은 프로젝트를 켜려 하면 먼저 컴파일하라고 알려 줘요\n- 컴파일되지 않은 프로젝트는 항상 꺼진 상태로 다뤄요"
+    },
+    {
       "version": "1.0.0",
       "source": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.0/workspace-1.0.0.slp",
       "releasedAt": "2026-10-29T07:51:10Z",
