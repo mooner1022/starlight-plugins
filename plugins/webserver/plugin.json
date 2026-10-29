@@ -21,6 +21,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.1.1",
+      "source": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.1.1/webserver-0.1.1.slp",
+      "releasedAt": "2026-10-29T05:34:41Z",
+      "changelog": "- Ktor를 직접 포함하지 않고 Ktor 플러그인에서 불러와요 (함께 설치돼요)\n- MCP 등 Ktor를 쓰는 다른 플러그인과 함께 써도 충돌하지 않아요\n- 플러그인 크기가 1.1MB에서 90KB로 줄었어요"
+    },
+    {
       "version": "0.1.0",
       "source": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.1.0/webserver-0.1.0.slp",
       "releasedAt": "2026-10-29T04:50:06Z",
