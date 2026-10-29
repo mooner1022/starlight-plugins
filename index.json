@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-29T09:28:51Z",
+  "generatedAt": "2026-10-29T11:27:24Z",
   "categories": [
     {
       "id": "messenger",
@@ -113,6 +113,20 @@
       "publishedAt": "2026-10-29T07:51:16Z",
       "releases": [
         {
+          "version": "0.1.2",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T11:24:49Z",
+          "changelog": "- 프로젝트를 바꾸거나 페이지를 닫을 때 남던 'Failed to handle GET /api/stream' 로그를 없앴어요\n- 플러그인 정보에 분류(개발 도구)를 추가했어요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ide-v0.1.2/ide-0.1.2.slp",
+          "size": 2547167,
+          "sha256": "8be2b0d52836cb9992958f09954d9e9bbaea26296142a154b973610f9a3041da",
+          "dependency": [
+            "ktor@3.6.0",
+            "workspace@1.0.0"
+          ],
+          "nativeLibrary": false
+        },
+        {
           "version": "0.1.1",
           "apiVersion": "0.3.2",
           "releasedAt": "2026-10-29T09:26:46Z",
@@ -167,6 +181,17 @@
       "publishedAt": "2026-10-29T05:25:43Z",
       "releases": [
         {
+          "version": "3.6.1",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T11:24:38Z",
+          "changelog": "- 플러그인 정보에 분류(라이브러리)를 추가했어요 (Ktor는 3.6.0 그대로예요)",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ktor-v3.6.1/ktor-3.6.1.slp",
+          "size": 1026658,
+          "sha256": "6698fe70237ac99c3f6689bc583c9e832ce4419e844b7401680721a1e78af6a7",
+          "dependency": [],
+          "nativeLibrary": false
+        },
+        {
           "version": "3.6.0",
           "apiVersion": "0.3.2",
           "releasedAt": "2026-10-29T05:25:43Z",
@@ -204,6 +229,20 @@
       "source": "https://github.com/mooner1022/starlight-mcp",
       "publishedAt": "2026-10-29T05:25:56Z",
       "releases": [
+        {
+          "version": "0.2.1",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T11:24:47Z",
+          "changelog": "- 요청 도중 연결이 끊겨도 오류 로그를 남기지 않아요\n- 플러그인 정보에 분류(개발 도구)를 추가했어요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/mcp-v0.2.1/mcp-0.2.1.slp",
+          "size": 102914,
+          "sha256": "6ab45c88286412a487d05a95748e9189ee5f9358326e323714d01c1e18c63a2f",
+          "dependency": [
+            "ktor@3.6.0",
+            "workspace@1.0.0"
+          ],
+          "nativeLibrary": false
+        },
         {
           "version": "0.2.0",
           "apiVersion": "0.3.2",
@@ -259,6 +298,19 @@
       "publishedAt": "2026-10-29T04:50:06Z",
       "releases": [
         {
+          "version": "0.1.2",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T11:24:44Z",
+          "changelog": "- 다운로드를 중간에 멈추거나 연결이 끊긴 요청을 오류로 기록하지 않아요 (통계의 오류 수에서도 빠져요)\n- 플러그인 정보에 분류(유틸리티)를 추가했어요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/webserver-v0.1.2/webserver-0.1.2.slp",
+          "size": 91534,
+          "sha256": "a945e59d68beedaf9f8e3dec98716f2818d1a89106d2adb9d3d2416d0fd58522",
+          "dependency": [
+            "ktor@3.6.0"
+          ],
+          "nativeLibrary": false
+        },
+        {
           "version": "0.1.1",
           "apiVersion": "0.3.2",
           "releasedAt": "2026-10-29T05:34:41Z",
@@ -307,6 +359,17 @@
       "source": "https://github.com/mooner1022/starlight-workspace",
       "publishedAt": "2026-10-29T07:51:10Z",
       "releases": [
+        {
+          "version": "1.0.2",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T11:24:41Z",
+          "changelog": "- 플러그인 정보에 분류(라이브러리)를 추가했어요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/workspace-v1.0.2/workspace-1.0.2.slp",
+          "size": 111138,
+          "sha256": "d502ca9be9f4f6d33ef95ee8d454f019978472571594ce9db4f30f3d1361b88a",
+          "dependency": [],
+          "nativeLibrary": false
+        },
         {
           "version": "1.0.1",
           "apiVersion": "0.3.2",
