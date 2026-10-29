@@ -21,6 +21,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.2.0",
+      "source": "https://github.com/mooner1022/starlight-mcp/releases/download/v0.2.0/mcp-0.2.0.slp",
+      "releasedAt": "2026-10-29T07:51:13Z",
+      "changelog": "- Workspace 플러그인이 함께 설치돼요 (웹 IDE와 변경 사항 공유)\n- 새 도구: 부분 수정, 파일 이름 바꾸기, 검색, 이벤트 목록·설정, 프로젝트 만들기, API 목록\n- 저장할 때 해시로 충돌 감지, 컴파일 오류 위치 표시\n- MCP 리소스(파일·로그)와 프롬프트(debug_project, new_bot)"
+    },
+    {
       "version": "0.1.0",
       "source": "https://github.com/mooner1022/starlight-mcp/releases/download/v0.1.0/mcp-0.1.0.slp",
       "releasedAt": "2026-10-29T05:25:56Z",
