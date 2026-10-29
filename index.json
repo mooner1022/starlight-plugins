@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-29T05:35:44Z",
+  "generatedAt": "2026-10-29T07:52:25Z",
   "categories": [
     {
       "id": "messenger",
@@ -210,6 +210,42 @@
           "url": "https://github.com/mooner1022/starlight-plugins/releases/download/webserver-v0.1.0/webserver-0.1.0.slp",
           "size": 1098146,
           "sha256": "7818eed9eec282362891b11546c30c43cde8cbcdc9a4c5000c6eac01c9ad130d",
+          "dependency": [],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "workspace",
+      "name": "Workspace",
+      "summary": "MCP·웹 IDE 같은 도구 플러그인이 함께 쓰는 프로젝트 작업 라이브러리예요",
+      "description": "MCP 서버, 웹 IDE 같은 도구 플러그인이 함께 쓰는 라이브러리예요. 이 플러그인만으로는 화면이 없고, 이 플러그인이 필요한 플러그인을 설치하면 함께 설치돼요.\n\n## 하는 일\n\n- 프로젝트 파일 읽기·쓰기·수정·검색 (프로젝트 밖 경로는 막아요)\n- 다른 도구가 바꾼 파일을 덮어쓰지 않도록 충돌 감지\n- 컴파일과 오류 위치, 이벤트 설정, 프로젝트 만들기\n- 프로젝트·앱 로그, 디버그룸 메시지\n- 도구끼리 변경 사항 공유: AI가 MCP로 고친 파일이 웹 IDE에 바로 반영돼요\n\n## 플러그인 개발자라면\n\n`starlight.json`에 `\"dependency\": [\"workspace@1.0.0\"]`를 넣고, 저장소의 `apiJar` 결과물을 `compileOnly`로 쓰세요.\n자세한 내용은 [GitHub](https://github.com/mooner1022/starlight-workspace)를 참고하세요.",
+      "authors": [
+        {
+          "name": "mooner1022",
+          "url": "https://github.com/mooner1022",
+          "verified": true
+        }
+      ],
+      "category": "library",
+      "tags": [
+        "라이브러리",
+        "개발 도구"
+      ],
+      "icon": "plugins/workspace/icon.png",
+      "screenshots": [],
+      "license": "GPL-3.0",
+      "source": "https://github.com/mooner1022/starlight-workspace",
+      "publishedAt": "2026-10-29T07:51:10Z",
+      "releases": [
+        {
+          "version": "1.0.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T07:51:10Z",
+          "changelog": "- 첫 릴리즈",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/workspace-v1.0.0/workspace-1.0.0.slp",
+          "size": 110922,
+          "sha256": "8d8860b658eb01c4b4dde28237579809876ab9948b7ec97fd87dcb68e9c678b1",
           "dependency": [],
           "nativeLibrary": false
         }

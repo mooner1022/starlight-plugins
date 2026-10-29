@@ -1,0 +1,12 @@
+{
+  "1.0.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [],
+    "nativeLibrary": false,
+    "size": 110922,
+    "sha256": "8d8860b658eb01c4b4dde28237579809876ab9948b7ec97fd87dcb68e9c678b1",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/workspace-v1.0.0/workspace-1.0.0.slp",
+    "origin": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.0/workspace-1.0.0.slp",
+    "publishedAt": "2026-10-29T07:52:22Z"
+  }
+}
