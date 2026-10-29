@@ -21,6 +21,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.1.1",
+      "source": "https://github.com/mooner1022/starlight-ide/releases/download/v0.1.1/ide-0.1.1.slp",
+      "releasedAt": "2026-10-29T09:26:46Z",
+      "changelog": "- 컴파일 안 된 프로젝트를 켤 때 이유를 알려 주고 \"컴파일하고 켜기\"를 제안해요\n- Ctrl+클릭으로 선언부·참조로 이동해요\n- 앱 전체 로그, 설정(테마·강조 색·에디터), 프로젝트 정렬·검색\n- 패널 접기, 발신원별 이벤트, 새 탭 모양과 아이콘\n- 하단 창 스크롤·다시 펼치기 문제 수정"
+    },
+    {
       "version": "0.1.0",
       "source": "https://github.com/mooner1022/starlight-ide/releases/download/v0.1.0/ide-0.1.0.slp",
       "releasedAt": "2026-10-29T07:51:16Z",
