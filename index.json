@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-29T09:27:40Z",
+  "generatedAt": "2026-10-29T09:28:51Z",
   "categories": [
     {
       "id": "messenger",
@@ -91,7 +91,7 @@
       "id": "ide",
       "name": "Web IDE",
       "summary": "PC 브라우저에서 봇을 편집하고 컴파일하고 바로 대화해 볼 수 있어요",
-      "description": "PC 브라우저에서 기기의 봇 프로젝트를 편집하고, 컴파일하고, 디버그룸으로 바로 시험해 볼 수 있어요.\n에디터는 VS Code와 같은 Monaco이고, StarLight API 자동완성을 지원해요.\n\n**Ktor**, **Workspace** 플러그인이 함께 설치돼요.\n\n## 시작하기\n\n1. 플러그인 설정 > 보안에서 **접근 토큰**을 정해요.\n2. 제어 > 상태를 눌러 주소(`http://<기기 IP>:8766`)를 복사해요.\n3. PC 브라우저에서 열고 토큰으로 로그인해요.\n\n## 기능\n\n- 프로젝트·파일 트리, 탭, 파일 찾기(Ctrl+P), 명령 팔레트(F1)\n- StarLight API·이벤트 타입 자동완성, `onMessage` 같은 이벤트 함수 틀 넣기\n- 컴파일(Ctrl+Shift+B)과 오류 줄 표시, 실시간 로그, 프로젝트 검색\n- 디버그룸 채팅으로 봇에게 바로 말 걸기\n- 저장할 때 충돌 감지: 앱이나 AI(MCP)가 그사이 바꾼 파일은 비교 화면에서 골라요\n- 이벤트 켜기/끄기, 프로젝트 만들기, 다크·라이트 테마\n\n자세한 내용은 [GitHub](https://github.com/mooner1022/starlight-ide)를 참고하세요.",
+      "description": "PC 브라우저에서 기기의 봇 프로젝트를 편집하고, 컴파일하고, 디버그룸으로 바로 시험해 볼 수 있어요.\n에디터는 VS Code와 같은 Monaco이고, StarLight API 자동완성을 지원해요.\n\n**Ktor**, **Workspace** 플러그인이 함께 설치돼요.\n\n## 시작하기\n\n1. 플러그인 설정 > 보안에서 **접근 토큰**을 정해요.\n2. 제어 > 상태를 눌러 주소(`http://<기기 IP>:8766`)를 복사해요.\n3. PC 브라우저에서 열고 토큰으로 로그인해요.\n\n## 기능\n\n- 프로젝트·파일 트리, 탭, 파일 찾기(Ctrl+P), 명령 팔레트(F1)\n- StarLight API·이벤트 타입 자동완성, `onMessage` 같은 이벤트 함수 틀 넣기\n- 컴파일(Ctrl+Shift+B)과 오류 줄 표시, 실시간 로그, 프로젝트 검색\n- 디버그룸 채팅으로 봇에게 바로 말 걸기\n- 저장할 때 충돌 감지: 앱이나 AI(MCP)가 그사이 바꾼 파일은 비교 화면에서 골라요\n- Ctrl+클릭으로 선언부나 참조로 이동 (StarLight API는 타입 선언을 보여 줘요)\n- 프로젝트 로그와 앱 전체 로그\n- 이벤트를 발신원별로 보고 켜기/끄기, 프로젝트 만들기·정렬·검색\n- 설정(Ctrl+,): 테마, 강조 색, 에디터 글꼴·탭 크기·줄 바꿈·미니맵, 디버그룸 보내기 키\n- 컴파일되지 않은 프로젝트는 꺼져 있어요. 켜려 하면 \"컴파일하고 켜기\"를 제안해요\n\n자세한 내용은 [GitHub](https://github.com/mooner1022/starlight-ide)를 참고하세요.",
       "authors": [
         {
           "name": "mooner1022",
@@ -112,6 +112,20 @@
       "source": "https://github.com/mooner1022/starlight-ide",
       "publishedAt": "2026-10-29T07:51:16Z",
       "releases": [
+        {
+          "version": "0.1.1",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T09:26:46Z",
+          "changelog": "- 컴파일 안 된 프로젝트를 켤 때 이유를 알려 주고 \"컴파일하고 켜기\"를 제안해요\n- Ctrl+클릭으로 선언부·참조로 이동해요\n- 앱 전체 로그, 설정(테마·강조 색·에디터), 프로젝트 정렬·검색\n- 패널 접기, 발신원별 이벤트, 새 탭 모양과 아이콘\n- 하단 창 스크롤·다시 펼치기 문제 수정",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ide-v0.1.1/ide-0.1.1.slp",
+          "size": 2547027,
+          "sha256": "d8157735db7daa6568714f02a167368e3756e74bcef90cc9ec50e714d80a99e5",
+          "dependency": [
+            "ktor@3.6.0",
+            "workspace@1.0.0"
+          ],
+          "nativeLibrary": false
+        },
         {
           "version": "0.1.0",
           "apiVersion": "0.3.2",
