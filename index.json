@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-10-29T07:53:38Z",
+  "generatedAt": "2026-10-29T07:54:19Z",
   "categories": [
     {
       "id": "messenger",
@@ -83,6 +83,47 @@
           "size": 3113143,
           "sha256": "497c55235ff37d5f10eb9ffcba9630b25c9f9475a2e90aa6ad52214ecbc26590",
           "dependency": [],
+          "nativeLibrary": false
+        }
+      ]
+    },
+    {
+      "id": "ide",
+      "name": "Web IDE",
+      "summary": "PC 브라우저에서 봇을 편집하고 컴파일하고 바로 대화해 볼 수 있어요",
+      "description": "PC 브라우저에서 기기의 봇 프로젝트를 편집하고, 컴파일하고, 디버그룸으로 바로 시험해 볼 수 있어요.\n에디터는 VS Code와 같은 Monaco이고, StarLight API 자동완성을 지원해요.\n\n**Ktor**, **Workspace** 플러그인이 함께 설치돼요.\n\n## 시작하기\n\n1. 플러그인 설정 > 보안에서 **접근 토큰**을 정해요.\n2. 제어 > 상태를 눌러 주소(`http://<기기 IP>:8766`)를 복사해요.\n3. PC 브라우저에서 열고 토큰으로 로그인해요.\n\n## 기능\n\n- 프로젝트·파일 트리, 탭, 파일 찾기(Ctrl+P), 명령 팔레트(F1)\n- StarLight API·이벤트 타입 자동완성, `onMessage` 같은 이벤트 함수 틀 넣기\n- 컴파일(Ctrl+Shift+B)과 오류 줄 표시, 실시간 로그, 프로젝트 검색\n- 디버그룸 채팅으로 봇에게 바로 말 걸기\n- 저장할 때 충돌 감지: 앱이나 AI(MCP)가 그사이 바꾼 파일은 비교 화면에서 골라요\n- 이벤트 켜기/끄기, 프로젝트 만들기, 다크·라이트 테마\n\n자세한 내용은 [GitHub](https://github.com/mooner1022/starlight-ide)를 참고하세요.",
+      "authors": [
+        {
+          "name": "mooner1022",
+          "url": "https://github.com/mooner1022",
+          "verified": true
+        }
+      ],
+      "category": "devtools",
+      "tags": [
+        "IDE",
+        "에디터",
+        "개발 도구",
+        "Monaco"
+      ],
+      "icon": "plugins/ide/icon.png",
+      "screenshots": [],
+      "license": "GPL-3.0",
+      "source": "https://github.com/mooner1022/starlight-ide",
+      "publishedAt": "2026-10-29T07:51:16Z",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-10-29T07:51:16Z",
+          "changelog": "- 첫 릴리즈",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ide-v0.1.0/ide-0.1.0.slp",
+          "size": 2541555,
+          "sha256": "94002fa33c29e13731d0000cf4cba880eb68cd4eac531865a442b81eea8472a9",
+          "dependency": [
+            "ktor@3.6.0",
+            "workspace@1.0.0"
+          ],
           "nativeLibrary": false
         }
       ]

@@ -1,0 +1,15 @@
+{
+  "0.1.0": {
+    "apiVersion": "0.3.2",
+    "dependency": [
+      "ktor@3.6.0",
+      "workspace@1.0.0"
+    ],
+    "nativeLibrary": false,
+    "size": 2541555,
+    "sha256": "94002fa33c29e13731d0000cf4cba880eb68cd4eac531865a442b81eea8472a9",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ide-v0.1.0/ide-0.1.0.slp",
+    "origin": "https://github.com/mooner1022/starlight-ide/releases/download/v0.1.0/ide-0.1.0.slp",
+    "publishedAt": "2026-10-29T07:54:15Z"
+  }
+}
