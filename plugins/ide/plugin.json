@@ -21,6 +21,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.1.2",
+      "source": "https://github.com/mooner1022/starlight-ide/releases/download/v0.1.2/ide-0.1.2.slp",
+      "releasedAt": "2026-10-29T11:24:49Z",
+      "changelog": "- 프로젝트를 바꾸거나 페이지를 닫을 때 남던 'Failed to handle GET /api/stream' 로그를 없앴어요\n- 플러그인 정보에 분류(개발 도구)를 추가했어요"
+    },
+    {
       "version": "0.1.1",
       "source": "https://github.com/mooner1022/starlight-ide/releases/download/v0.1.1/ide-0.1.1.slp",
       "releasedAt": "2026-10-29T09:26:46Z",
