@@ -32,5 +32,17 @@
     "url": "https://github.com/mooner1022/starlight-plugins/releases/download/webserver-v0.1.2/webserver-0.1.2.slp",
     "origin": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.1.2/webserver-0.1.2.slp",
     "publishedAt": "2026-10-29T11:27:16Z"
+  },
+  "0.2.0": {
+    "apiVersion": "1.0.0",
+    "dependency": [
+      "ktor@3.6.0"
+    ],
+    "nativeLibrary": false,
+    "size": 95010,
+    "sha256": "81f553c3a138aba21943e13079111bbde953ccc483937e6e336c7d0969c8f66d",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/webserver-v0.2.0/webserver-0.2.0.slp",
+    "origin": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.2.0/webserver-0.2.0.slp",
+    "publishedAt": "2026-10-31T03:50:12Z"
   }
 }
