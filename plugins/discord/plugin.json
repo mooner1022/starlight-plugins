@@ -20,6 +20,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.2.0",
+      "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.2.0/discord-0.2.0.slp",
+      "releasedAt": "2026-10-31T05:45:51Z",
+      "changelog": "- StarLight nightly(PluginCore 1.0.0) 이상이 필요해요. 정식 앱(0.3.4b)에서는 불러오지 않아요\n- 설정에서 클라이언트 상태, 게이트웨이 핑, 참여 중인 서버를 볼 수 있어요\n- 시작/종료·재시작 버튼이 확인을 받고 결과를 알려 줘요. 봇 초대 링크 버튼도 추가했어요\n- 게이트웨이 인텐트를 목록과 선택 버튼으로 바꿨어요. 이전에 고른 인텐트는 다시 골라 주세요\n- 봇의 온라인 상태와 활동(플레이 중, 듣는 중 등)을 설정할 수 있어요\n- 토큰 입력란을 가리고, JDA 로그가 항상 StarLight 로그로 나와요"
+    },
+    {
       "version": "0.1.0",
       "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.1.0/discord-0.1.0.slp",
       "releasedAt": "2026-10-28T09:00:00Z",
