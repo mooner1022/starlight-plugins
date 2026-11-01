@@ -20,6 +20,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.3.0",
+      "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.3.0/discord-0.3.0.slp",
+      "releasedAt": "2026-11-01T11:27:17Z",
+      "changelog": "- 봇 토큰을 설정 화면 대신 StarLight의 초기 설정 창에서 입력해요. 디스코드에 확인한 뒤 저장하고 바로 연결해요\n- 초기 설정 창이 있는 StarLight 빌드가 필요해요. 그 전 1.0.0 빌드에서는 0.2.0에서 저장한 토큰으로만 동작해요\n- 토큰을 공용 저장소 대신 앱 내부 저장소에 보관해요. 0.2.0에서 저장한 토큰은 처음 실행할 때 옮겨요\n- 저장된 토큰을 디스코드가 거부하면 이유와 함께 초기 설정을 다시 요청해요\n- 토큰이 없으면 부팅할 때 연결을 시도하지 않아요"
+    },
+    {
       "version": "0.2.0",
       "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.2.0/discord-0.2.0.slp",
       "releasedAt": "2026-10-31T05:45:51Z",
