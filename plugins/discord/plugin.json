@@ -20,6 +20,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.4.0",
+      "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.4.0/discord-0.4.0.slp",
+      "releasedAt": "2026-11-05T02:55:11Z",
+      "changelog": "- 디스코드 채널에서 받은 메시지의 room.sendMedia(files, options)로 이미지, 동영상, 파일을 그 채널에 올릴 수 있어요\n- 경로, URL, data URL, Base64, 바이트 배열, Bitmap과 그 배열, 옵션(fileName, timeout, cache, headers)을 MediaSharer.send와 똑같이 받아요\n- 한 메시지에 10개씩 나눠 올리고, 결과는 업로드가 끝난 뒤에 나와요\n- 미디어 전송을 지원하는 StarLight 빌드(StarLight#93 이후)가 필요해요. 그 전 빌드에서도 다른 기능은 그대로 동작해요"
+    },
+    {
       "version": "0.3.0",
       "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.3.0/discord-0.3.0.slp",
       "releasedAt": "2026-11-01T11:27:17Z",
