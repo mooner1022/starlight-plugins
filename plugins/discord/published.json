@@ -28,5 +28,15 @@
     "url": "https://github.com/mooner1022/starlight-plugins/releases/download/discord-v0.3.0/discord-0.3.0.slp",
     "origin": "https://github.com/mooner1022/starlight-discord/releases/download/v0.3.0/discord-0.3.0.slp",
     "publishedAt": "2026-11-01T11:29:09Z"
+  },
+  "0.4.0": {
+    "apiVersion": "1.0.0",
+    "dependency": [],
+    "nativeLibrary": false,
+    "size": 3134707,
+    "sha256": "2934b07fa314d6facc37a1c779fd230e6f79515d03d3dcf237e1d61e140b5c57",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/discord-v0.4.0/discord-0.4.0.slp",
+    "origin": "https://github.com/mooner1022/starlight-discord/releases/download/v0.4.0/discord-0.4.0.slp",
+    "publishedAt": "2026-11-05T03:04:55Z"
   }
 }

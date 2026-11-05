@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-11-01T11:29:12Z",
+  "generatedAt": "2026-11-05T03:04:58Z",
   "categories": [
     {
       "id": "messenger",
@@ -74,6 +74,17 @@
       "source": "https://github.com/mooner1022/starlight-discord",
       "publishedAt": "2026-10-28T09:00:00Z",
       "releases": [
+        {
+          "version": "0.4.0",
+          "apiVersion": "1.0.0",
+          "releasedAt": "2026-11-05T02:55:11Z",
+          "changelog": "- 디스코드 채널에서 받은 메시지의 room.sendMedia(files, options)로 이미지, 동영상, 파일을 그 채널에 올릴 수 있어요\n- 경로, URL, data URL, Base64, 바이트 배열, Bitmap과 그 배열, 옵션(fileName, timeout, cache, headers)을 MediaSharer.send와 똑같이 받아요\n- 한 메시지에 10개씩 나눠 올리고, 결과는 업로드가 끝난 뒤에 나와요\n- 미디어 전송을 지원하는 StarLight 빌드(StarLight#93 이후)가 필요해요. 그 전 빌드에서도 다른 기능은 그대로 동작해요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/discord-v0.4.0/discord-0.4.0.slp",
+          "size": 3134707,
+          "sha256": "2934b07fa314d6facc37a1c779fd230e6f79515d03d3dcf237e1d61e140b5c57",
+          "dependency": [],
+          "nativeLibrary": false
+        },
         {
           "version": "0.3.0",
           "apiVersion": "1.0.0",
