@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-11-08T06:23:38Z",
+  "generatedAt": "2026-11-08T06:24:44Z",
   "categories": [
     {
       "id": "messenger",
@@ -124,7 +124,7 @@
       "id": "ide",
       "name": "Web IDE",
       "summary": "PC 브라우저에서 봇을 편집하고 컴파일하고 바로 대화해 볼 수 있어요",
-      "description": "PC 브라우저에서 기기의 봇 프로젝트를 편집하고, 컴파일하고, 디버그룸으로 바로 시험해 볼 수 있어요.\n에디터는 VS Code와 같은 Monaco이고, StarLight API 자동완성을 지원해요.\n\n**Ktor**, **Workspace** 플러그인이 함께 설치돼요.\n\n## 시작하기\n\n1. 플러그인 설정 > 보안에서 **접근 토큰**을 정해요.\n2. 제어 > 상태를 눌러 주소(`http://<기기 IP>:8766`)를 복사해요.\n3. PC 브라우저에서 열고 토큰으로 로그인해요.\n\n## 기능\n\n- 프로젝트·파일 트리, 탭, 파일 찾기(Ctrl+P), 명령 팔레트(F1)\n- StarLight API·이벤트 타입 자동완성, `onMessage` 같은 이벤트 함수 틀 넣기\n- 컴파일(Ctrl+Shift+B)과 오류 줄 표시, 실시간 로그, 프로젝트 검색\n- 디버그룸 채팅으로 봇에게 바로 말 걸기\n- 저장할 때 충돌 감지: 앱이나 AI(MCP)가 그사이 바꾼 파일은 비교 화면에서 골라요\n- Ctrl+클릭으로 선언부나 참조로 이동 (StarLight API는 타입 선언을 보여 줘요)\n- 프로젝트 로그와 앱 전체 로그\n- 이벤트를 발신원별로 보고 켜기/끄기, 프로젝트 만들기·정렬·검색\n- 설정(Ctrl+,): 테마, 강조 색, 에디터 글꼴·탭 크기·줄 바꿈·미니맵, 디버그룸 보내기 키\n- 컴파일되지 않은 프로젝트는 꺼져 있어요. 켜려 하면 \"컴파일하고 켜기\"를 제안해요\n\n자세한 내용은 [GitHub](https://github.com/mooner1022/starlight-ide)를 참고하세요.",
+      "description": "PC 브라우저에서 기기의 봇 프로젝트를 편집하고, 컴파일하고, 디버그룸으로 바로 시험해 볼 수 있어요.\n에디터는 VS Code와 같은 Monaco이고, StarLight API 자동완성을 지원해요.\n\n**Ktor**, **Workspace** 플러그인이 함께 설치돼요.\n\n## 시작하기\n\n1. 처음 켜면 **초기 설정** 창에서 **접근 토큰**을 정해요. 나중에 플러그인 설정 > 보안에서 바꿀 수 있어요.\n2. 제어 > 상태를 눌러 주소(`http://<기기 IP>:8766`)를 복사해요.\n3. PC 브라우저에서 열고 토큰으로 로그인해요.\n\n## 기능\n\n- 프로젝트·파일 트리, 탭, 파일 찾기(Ctrl+P), 명령 팔레트(F1)\n- 트리에서 바로 새 파일·폴더 만들기와 이름 바꾸기(F2), PC의 파일·폴더를 끌어 놓아 업로드\n- 연결이 끊기면 스스로 다시 연결하고, 앱이 다시 시작되어도 저장하지 않은 편집이 그대로 남아요\n- StarLight API·이벤트 타입 자동완성, `onMessage` 같은 이벤트 함수 틀 넣기\n- 컴파일(Ctrl+Shift+B)과 오류 줄 표시, 실시간 로그, 프로젝트 검색\n- 디버그룸 채팅으로 봇에게 바로 말 걸기\n- 저장할 때 충돌 감지: 앱이나 AI(MCP)가 그사이 바꾼 파일은 비교 화면에서 골라요\n- Ctrl+클릭으로 선언부나 참조로 이동 (StarLight API는 타입 선언을 보여 줘요)\n- 프로젝트 로그와 앱 전체 로그\n- 이벤트를 발신원별로 보고 켜기/끄기, 프로젝트 만들기·정렬·검색\n- 설정(Ctrl+,): 테마, 강조 색, 에디터 글꼴·탭 크기·줄 바꿈·미니맵, 디버그룸 보내기 키\n- 컴파일되지 않은 프로젝트는 꺼져 있어요. 켜려 하면 \"컴파일하고 켜기\"를 제안해요\n\n자세한 내용은 [GitHub](https://github.com/mooner1022/starlight-ide)를 참고하세요.",
       "authors": [
         {
           "name": "mooner1022",
@@ -145,6 +145,20 @@
       "source": "https://github.com/mooner1022/starlight-ide",
       "publishedAt": "2026-10-29T07:51:16Z",
       "releases": [
+        {
+          "version": "0.3.0",
+          "apiVersion": "1.0.0",
+          "releasedAt": "2026-11-08T06:19:19Z",
+          "changelog": "- Workspace 1.0.3, Ktor 3.6.2 이상이 필요해요\n- 접근 토큰이 없으면 시작할 때 초기 설정 창에서 물어봐요\n- 연결이 끊기면 스스로 다시 연결하고, 끊긴 동안 눈에 띄게 알려 줘요\n- 앱이 다시 시작되어도 페이지를 새로 고치지 않고 토큰만 다시 물어서, 저장하지 않은 편집이 그대로 남아요\n- 트리에서 바로 새 파일·폴더를 만들고 이름을 바꾸고, 폴더를 지울 수 있어요\n- PC의 파일과 폴더를 트리에 끌어 놓아 업로드할 수 있어요\n- 서버 포트를 이미 쓰고 있어도 StarLight가 종료되지 않아요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ide-v0.3.0/ide-0.3.0.slp",
+          "size": 2564331,
+          "sha256": "59ac248439790683a4c277f77b2e088144e292aa354f756c7bc853202f4e0043",
+          "dependency": [
+            "ktor@3.6.0",
+            "workspace@1.0.0"
+          ],
+          "nativeLibrary": false
+        },
         {
           "version": "0.2.0",
           "apiVersion": "1.0.0",
