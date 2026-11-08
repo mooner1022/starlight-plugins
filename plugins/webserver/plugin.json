@@ -21,6 +21,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.3.0",
+      "source": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.3.0/webserver-0.3.0.slp",
+      "releasedAt": "2026-11-08T06:20:35Z",
+      "changelog": "- Ktor 3.6.2 이상이 필요해요\n- 서버 포트를 이미 쓰고 있어도 StarLight가 종료되지 않고, 같은 포트를 쓰는 플러그인을 알려 줘요\n- 초기 설정에서 접속 허용 범위와 토큰 필수 여부를 정할 수 있어요\n- StarLight AI가 이 플러그인을 설명할 수 있도록 문서와 가이드를 넣었어요(StarLight 1.1.0부터)"
+    },
+    {
       "version": "0.2.0",
       "source": "https://github.com/mooner1022/starlight-webserver/releases/download/v0.2.0/webserver-0.2.0.slp",
       "releasedAt": "2026-10-31T03:46:55Z",
