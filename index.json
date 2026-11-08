@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-11-05T03:04:58Z",
+  "generatedAt": "2026-11-08T06:22:45Z",
   "categories": [
     {
       "id": "messenger",
@@ -227,6 +227,17 @@
       "source": "https://github.com/mooner1022/starlight-ktor",
       "publishedAt": "2026-10-29T05:25:43Z",
       "releases": [
+        {
+          "version": "3.6.2",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-11-08T06:17:53Z",
+          "changelog": "- 다른 플러그인이 서버를 여는 `KtorServers` 추가: 포트를 이미 쓰고 있어도 StarLight가 종료되지 않아요\n- 같은 포트를 쓰는 다른 플러그인을 알려 주고, 앱 재시작 직후에는 포트가 풀릴 때까지 다시 시도해요\n- 포함된 Ktor는 3.6.0 그대로예요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/ktor-v3.6.2/ktor-3.6.2.slp",
+          "size": 1032234,
+          "sha256": "97ea6c411aa7dd20158d8b19c718407e8783e1262756481024439c5ea590c3e5",
+          "dependency": [],
+          "nativeLibrary": false
+        },
         {
           "version": "3.6.1",
           "apiVersion": "0.3.2",
