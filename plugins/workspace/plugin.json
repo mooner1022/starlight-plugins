@@ -19,6 +19,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "1.0.3",
+      "source": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.3/workspace-1.0.3.slp",
+      "releasedAt": "2026-11-08T06:18:36Z",
+      "changelog": "- 디렉터리 만들기·지우기·이름 바꾸기와 이미지 같은 바이너리 파일 쓰기를 추가했어요(API 레벨 2)\n- 웹 IDE 0.3.0의 폴더 기능과 파일 업로드에 필요해요\n- 기존 플러그인은 그대로 동작해요"
+    },
+    {
       "version": "1.0.2",
       "source": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.2/workspace-1.0.2.slp",
       "releasedAt": "2026-10-29T11:24:41Z",
