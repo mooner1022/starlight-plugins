@@ -20,6 +20,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "3.6.2",
+      "source": "https://github.com/mooner1022/starlight-ktor/releases/download/v3.6.2/ktor-3.6.2.slp",
+      "releasedAt": "2026-11-08T06:17:53Z",
+      "changelog": "- 다른 플러그인이 서버를 여는 `KtorServers` 추가: 포트를 이미 쓰고 있어도 StarLight가 종료되지 않아요\n- 같은 포트를 쓰는 다른 플러그인을 알려 주고, 앱 재시작 직후에는 포트가 풀릴 때까지 다시 시도해요\n- 포함된 Ktor는 3.6.0 그대로예요"
+    },
+    {
       "version": "3.6.1",
       "source": "https://github.com/mooner1022/starlight-ktor/releases/download/v3.6.1/ktor-3.6.1.slp",
       "releasedAt": "2026-10-29T11:24:38Z",
