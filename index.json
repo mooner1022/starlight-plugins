@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "StarLight Plugins",
   "description": "Official plugin repository for Project StarLight",
-  "generatedAt": "2026-11-08T06:22:45Z",
+  "generatedAt": "2026-11-08T06:23:38Z",
   "categories": [
     {
       "id": "messenger",
@@ -482,6 +482,17 @@
       "source": "https://github.com/mooner1022/starlight-workspace",
       "publishedAt": "2026-10-29T07:51:10Z",
       "releases": [
+        {
+          "version": "1.0.3",
+          "apiVersion": "0.3.2",
+          "releasedAt": "2026-11-08T06:18:36Z",
+          "changelog": "- 디렉터리 만들기·지우기·이름 바꾸기와 이미지 같은 바이너리 파일 쓰기를 추가했어요(API 레벨 2)\n- 웹 IDE 0.3.0의 폴더 기능과 파일 업로드에 필요해요\n- 기존 플러그인은 그대로 동작해요",
+          "url": "https://github.com/mooner1022/starlight-plugins/releases/download/workspace-v1.0.3/workspace-1.0.3.slp",
+          "size": 114626,
+          "sha256": "39d07ac298e5150f1eb6d65c96693ed7afe2720ac1dfd2814e8b6f4da5defef0",
+          "dependency": [],
+          "nativeLibrary": false
+        },
         {
           "version": "1.0.2",
           "apiVersion": "0.3.2",

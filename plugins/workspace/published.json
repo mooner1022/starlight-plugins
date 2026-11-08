@@ -28,5 +28,15 @@
     "url": "https://github.com/mooner1022/starlight-plugins/releases/download/workspace-v1.0.2/workspace-1.0.2.slp",
     "origin": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.2/workspace-1.0.2.slp",
     "publishedAt": "2026-10-29T11:27:16Z"
+  },
+  "1.0.3": {
+    "apiVersion": "0.3.2",
+    "dependency": [],
+    "nativeLibrary": false,
+    "size": 114626,
+    "sha256": "39d07ac298e5150f1eb6d65c96693ed7afe2720ac1dfd2814e8b6f4da5defef0",
+    "url": "https://github.com/mooner1022/starlight-plugins/releases/download/workspace-v1.0.3/workspace-1.0.3.slp",
+    "origin": "https://github.com/mooner1022/starlight-workspace/releases/download/v1.0.3/workspace-1.0.3.slp",
+    "publishedAt": "2026-11-08T06:23:35Z"
   }
 }
