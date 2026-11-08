@@ -20,6 +20,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.5.0",
+      "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.5.0/discord-0.5.0.slp",
+      "releasedAt": "2026-11-08T06:21:13Z",
+      "changelog": "- StarLight AI가 디스코드 플러그인을 설명할 수 있도록 문서와 가이드를 넣었어요(StarLight 1.1.0부터)\n- 이벤트 목록에 각 이벤트의 짧은 설명이 붙어요"
+    },
+    {
       "version": "0.4.0",
       "source": "https://github.com/mooner1022/starlight-discord/releases/download/v0.4.0/discord-0.4.0.slp",
       "releasedAt": "2026-11-05T02:55:11Z",
