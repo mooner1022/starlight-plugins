@@ -48,6 +48,13 @@
         "en": "KakaoTalk and Discord, together",
         "ko": "카카오톡과 디스코드를 하나로"
       }
+    },
+    {
+      "plugin": "kakaodb",
+      "headline": {
+        "en": "KakaoTalk messages, even with notifications off",
+        "ko": "알림을 꺼 둔 방의 메시지까지"
+      }
     }
   ]
 }
