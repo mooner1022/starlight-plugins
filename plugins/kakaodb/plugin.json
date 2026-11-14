@@ -20,6 +20,12 @@
   "screenshots": [],
   "releases": [
     {
+      "version": "0.2.0",
+      "source": "https://github.com/mooner1022/starlight-kakaodb/releases/download/v0.2.0/kakaodb-0.2.0.slp",
+      "releasedAt": "2026-11-14T13:25:38Z",
+      "changelog": "- 0.1.0용 스크립트는 고쳐야 해요: onKakaoMessage가 다른 이벤트처럼 이벤트 객체를 받아요. 메시지는 event.message이고, 보낼 때는 event.room.send(text)를 써요\n- KakaoMessage의 reply(), markAsRead(), db를 없앴어요. event.room과 event.db(또는 KakaoDB)를 쓰세요"
+    },
+    {
       "version": "0.1.0",
       "source": "https://github.com/mooner1022/starlight-kakaodb/releases/download/v0.1.0/kakaodb-0.1.0.slp",
       "releasedAt": "2026-11-14T08:41:08Z",

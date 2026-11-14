@@ -3,12 +3,12 @@
 
 ## 사용법
 
-프로젝트 설정에서 쓸 이벤트를 켜면 호출돼요. 이벤트는 연결한 뒤에 새로 저장된 기록에 대해서만 발생해요.
+프로젝트 설정에서 쓸 이벤트를 켜면 호출돼요. 이벤트는 연결한 뒤에 새로 저장된 기록에 대해서만 발생해요. 모든 이벤트 함수는 이벤트 객체(`event`)를 받고, 메시지는 `event.room.send(text)`로 보내요.
 
 ```js
-function onKakaoMessage(msg) {
-    if (msg.text == "!읽음")
-        msg.reply("안 읽은 사람: " + msg.getUnreadCount() + "명");
+function onKakaoMessage(event) {
+    if (event.message.text == "!읽음")
+        event.room.send("안 읽은 사람: " + event.message.getUnreadCount() + "명");
 }
 
 function onKakaoMessageDeleted(event) {
